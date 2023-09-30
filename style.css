@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+  }
+
+
+  .container {
+    width: 100%;
+    margin: auto;
+    background-color: #1B3764;
+    color: white;
+    padding-left: 100px;
+  }
+/* Set background color for the section */
+.flex-container {
+  background-color: #1B3764; /* Use your preferred color code or name */
+  padding: 20px; /* Add padding to give some space around the content */
+  color: white;
+ line-height: 2.5em; /* المسافة بنسبة مئوية من حجم النص */
+
+
+}
+
+
+  /* header section */
+header {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .abc {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+
+    
+}
+
+button, a, select {
+    margin: 30px; /* توزيع المسافة بين العناصر */
+}
+button{
+    background-color: #FFCA42;
+    color: black;
+    font-size: 30px;
+    border: none;
+}
+  header .container {
+    min-height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* header .container nav a {
+    padding: 10px 20px;
+    transition: 0.5s;
+  } */
+
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 42px;
+    
+}
+
+.icon {
+    font-size: 24px; /* حجم الأيقونة */
+    margin-right: 10px 20px; /* التباعد بين الأيقونة والعنوان */
+    
+   
+}
+/* تحديد خط تحت النص */
+.link-with-underline {
+  text-decoration: underline;
+}
+.line {
+  border-top: 0.1cm solid #FFCA42;; /* يمكنك تغيير اللون والسمك حسب احتياجاتك */
+  width:0.3cm ;
+  display: inline-block;
+}
+
+h3 {
+  display: inline-block;
+  margin-left: 10px; /* تحديد المسافة بين الخط وعنوان h3 */
+  
+}
+.flex-container{
+  padding-left: 100px;
+  
+  
+
+}
+/* تخصيص القائمة الرئيسية */
+.main-list {
+  list-style-type: none; /* إزالة نوع الترقيم */
+  padding: 0; /* إزالة التباعد الداخلي للقائمة الرئيسية */
+}
+
+/* تخصيص العناصر (li) في القائمة */
+.main-list li {
+  display: inline-block; /* عرض العناصر بجانب بعضها */
+  width: 100px; /* تحديد عرض لكل عنصر لتظهر 3 عناصر في الصف */
+  padding: 10px; /* تحديد هامش داخلي للعناصر */
+  margin: 10px; /* تحديد هامش خارجي للعناصر */
+ 
+}
+
+/* تخصيص العنوصر h3 داخل القائمة */
+.main-list li h3 {
+  margin: 0 0 10px; /* تحديد التباعد بين العنوصر وقائمته الفرعية */
+  list-style: circle ;
+}
+
+/* تخصيص القوائم الفرعية */
+.sub-list {
+  list-style-type: none; /* إزالة نوع الترقيم */
+  padding: 0; /* إزالة التباعد الداخلي للقائمة الفرعية */
+}
+
+/* تخصيص العناصر (li) في القائمة الفرعية */
+.sub-list li {
+  margin-top: 5px; /* تحديد التباعد بين العناصر في القائمة الفرعية */
+  list-style-type: disc; /* نوع الترقيم (دوائر) للقائمة الفرعية */
+}
+
+/* تحديد تخطيط العرض المرنة */
+.flex-container {
+  display: flex;
+}
+
+/* تحديد النصف الأيسر (نصوص وكتابة) */
+.left-content {
+  width: 50%;
+  padding: 20px;
+}
+
+/* تحديد النصف الأيمن (الصورة) */
+.right-content {
+  width: 50%;
+  padding-left: 50px;
+}
+
+
+
+
+
+/* تحديد العنصر section */
+ .lmn {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+}
+
+.split-screen{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.left-panel{
+  width: 50%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: row; /* تحديد الاتجاه إلى أفقي (من اليسار إلى اليمين) */
+}
+
+
+
+
+.flex-item {
+  flex: 1; /* تحديد نسبة المساحة التي ستأخذها كل عنصر */
+  margin: 10px; /* إضافة هامش لكل عنصر لتحديد التباعد بينهم */
+  padding: 20px; /* إضافة تباعد داخلي لكل عنصر */
+  background-color: #e5e3e3; /* إضافة لون خلفية لكل عنصر (للتوضيح) */
+  height: 200px;
+  text-align: left;
+  width: calc(50% - 20px); /* Adjust the width to fit two chapters per row */
+
+}
+
+
+  .right-panel{
+    width: 50%;
+    padding-left: 100px;
+    
+  }
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+/* تحديد العناصر */
+.image-container img, .image-container .element {
+  flex: 1 1 45%; /* توزيع المساحة بالنسبة المناسبة */
+  margin: 10px; /* تحديد التباعد بين العناصر */
+}
+.rst{
+  background-color:#e5e3e3 ;
+  align-items: center;
+}
+.nob {
+  text-align: center;
+  color: rgb(115, 113, 113);
+}
+
+
+.allllll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+
+
+.nob button {
+  padding: 10px 20px;
+}
+
+.nob p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.nob .link-with-underline {
+  text-decoration: underline;
+}
+
+.chapter-container {
+  display: flex;
+  flex-wrap: wrap;
+padding-left: 100px;
+padding-right: 100px;
+
+
+  
+}
+
+.chapter {
+  padding: 20px;
+  margin: 10px;
+  width: calc(50% - 20px); /* Adjust the width to fit two chapters per row */
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.chapter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.chapter p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/********************************************************/
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+padding-right: 100px;
+}
+
+.article {
+  width: 60%;
+}
+
+.resource {
+  width: 30%;
+  padding: 5px;
+  margin-top: 20px;
+  
+}
+
+.link-with-underline, p {
+  display: inline-block;
+  margin-right: 10px; /* تعديل المسافة بين الرابط والنص حسب الحاجة */
+
+}
+.resource img {
+  width: 75%;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/***************foooootttter**********************************/
+footer {
+  background-color: #1B3764;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
